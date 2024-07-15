@@ -1,8 +1,5 @@
 const { User } = require("../db/db");
 
-
-
-
 function userMiddleware(req,res,next)
 {
     const username = req.body.username;
