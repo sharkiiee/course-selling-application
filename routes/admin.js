@@ -12,15 +12,15 @@ router.post('/signup',async function(req,res){
 
     //check if the user with this username already exist.
 
-    Admin.findOne({
+    const isValue =await Admin.findOne({
         username
-    }).then((value) =>{
-        if(value){
+    });
+    if(isValue){
             return res.status(409).json({
                 message: "User already exist"
             })
         }
-    })
+
 
     // Create new user in the database.
 
@@ -29,7 +29,7 @@ router.post('/signup',async function(req,res){
             username,
             password
         })
-        res.json({
+        return res.json({
             message:'Admin created succesfully'
         })
     } catch (error) {
