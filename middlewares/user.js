@@ -3,7 +3,7 @@ const { User } = require("../db/db");
 
 
 
-function adminMiddleware(req,res,next)
+function userMiddleware(req,res,next)
 {
     const username = req.body.username;
     const password = req.body.password;
@@ -22,4 +22,4 @@ function adminMiddleware(req,res,next)
     })
 }
 
-module.exports = adminMiddleware;
+module.exports = userMiddleware;
