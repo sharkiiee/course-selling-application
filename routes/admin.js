@@ -1,6 +1,9 @@
 const { Router } = require("express");
+const jwt = require("jsonwebtoken")
 const adminMiddleware = require("../middlewares/admin");
-const { Admin, Course } = require("../db/db");
+const { Admin, Course, User } = require("../db/db");
+const {JWT_SECRET} = require("../config");
+const { isValid } = require("zod");
 
 const router = Router();
 
@@ -12,7 +15,7 @@ router.post('/signup',async function(req,res){
 
     //check if the user with this username already exist.
 
-    const isValue =await Admin.findOne({
+    const isValue = await Admin.findOne({
         username
     });
     if(isValue){
@@ -37,6 +40,32 @@ router.post('/signup',async function(req,res){
             message: "Something is up with the server"
         })
     }
+})
+
+router.post("/signin",async function(req,res){
+    // Implement user signin logic
+
+    const username = req.body.username;
+    const password = req.body.password;
+
+    const isValidated = await Admin.findOne({
+        username,
+        password
+    })
+
+    if(!isValidated){
+        return res.status(411).json({
+            message: "Wrong email and password"
+        })
+    }
+
+    const token = jwt.sign({
+        username
+    },JWT_SECRET);
+
+    res.json({
+        Token: token
+    })
 })
 
 router.post('/courses', adminMiddleware, async (req, res) => {
