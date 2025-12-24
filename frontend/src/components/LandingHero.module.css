@@ -1,0 +1,73 @@
+.videoContainer {
+    position: relative;
+    height: calc(85vh - 3rem);
+    width: 100vw;
+    display: flex;
+    margin-top: 3rem;
+}
+
+.videoContainer video {
+  height: 100%;
+  width: 100vw;
+  object-fit: cover;
+  display: block;
+}
+
+.dimOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6); 
+  z-index: 0;
+}
+
+.textOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  text-transform: capitalize;
+}
+
+.textOverlay h1 {
+  font-size: 3rem;
+  font-weight: 900;
+   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+   margin-top: 2rem;
+}
+
+.textOverlay p {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+
+.inputContainer{
+  background-color: white;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  margin-top: 2rem;
+}
+
+.inputContainer .seachIcon{
+  color: gray;
+  margin-right: 0.5rem;
+  border-right: gray 1px solid;
+  padding-right: 0.5rem;
+}
+
+.inputContainer input{
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  width: 300px;
+}

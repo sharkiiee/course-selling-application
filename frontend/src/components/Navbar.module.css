@@ -1,0 +1,11 @@
+.navbar {
+  box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.2);
+  height: 20vh;
+}
+
+.logo {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
