@@ -1,4 +1,4 @@
-import drop from "/fog.mp4";
+import drop from "/gridVideo3.mp4";
 import styles from "./LandingHero.module.css";
 import logo from "/logo.png";
 import Container from "./Container";
@@ -28,7 +28,7 @@ export default function LandingHero() {
             Mentored by Sarthak Agrawal
           </div>
           <h1 className={`lato-font ${styles.textHeading}`}>
-            Choose Your Learning Path
+            Choose your learning path
           </h1>
           <p className="lato-font">
             Master real engineering skills with hands-on mentorship. From

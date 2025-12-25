@@ -1,5 +1,5 @@
 .navbar {
-  box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -20px 8px -4px rgba(0, 0, 0, 1);
   height: 10vh;
   align-content: center;
 }
