@@ -23,4 +23,54 @@
 .navProfile {
   display: flex;
   gap: 1rem;
+  align-items: center;
+}
+
+.navProfile button{
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 40rem;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.navProfile button:hover {
+  background-color: #333;
+}
+
+.inputContainer {
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  width: clamp(250px, 60%, 500px);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+  padding: 0.2rem 0.5rem;
+}
+
+.inputContainer .seachIcon {
+  color: gray;
+  flex-shrink: 0;
+  height: 1.2rem;
+  font-size: smaller;
+  color: gray;
+}
+
+.inputContainer input {
+  border: none;
+  padding: 0.2rem 0.5rem;
+  outline: none;
+  font-size: 0.875rem;
+  width: 100%;
+  flex: 1;
+  color: gray;
+}
+
+.inputContainer input::placeholder {
+  font-size: 0.875rem;
+  color: gray;
 }

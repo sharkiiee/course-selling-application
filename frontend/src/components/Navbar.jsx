@@ -1,5 +1,6 @@
 import styles from "./Navbar.module.css";
 import Container from "./Container";
+import {IconSearch} from "@tabler/icons-react";
 export default function Navbar() {
   return (
     <nav className={styles.navbar}>
@@ -11,8 +12,14 @@ export default function Navbar() {
             <div>Courses</div>
           </div>
           <div className={styles.navProfile}>
-            <div>Search</div>
-            <div>Profile</div>
+            <div className={styles.inputContainer}>
+            <IconSearch className={styles.seachIcon} />
+            <input
+              type="text"
+              placeholder="Type to search"
+            />
+          </div>
+          <button>S</button>
           </div>
         </div>
       </Container>
