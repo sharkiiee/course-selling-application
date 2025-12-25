@@ -1,14 +1,14 @@
 .videoContainer {
-    position: relative;
-    height: calc(85vh - 3rem);
-    width: 100vw;
-    display: flex;
-    margin-top: 3rem;
+  position: relative;
+  height: calc(85vh - 3rem);
+  width: 100%;
+  display: flex;
+  overflow: hidden;
 }
 
 .videoContainer video {
   height: 100%;
-  width: 100vw;
+  width: 100%;
   object-fit: cover;
   display: block;
 }
@@ -19,7 +19,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.6); 
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 0;
 }
 
@@ -33,41 +33,51 @@
   padding: 20px;
   color: white;
   text-transform: capitalize;
+  width: 90%;
+  max-width: 1200px;
 }
 
 .textOverlay h1 {
-  font-size: 3rem;
+  font-size: clamp(1.5rem, 8vw, 3rem);
   font-weight: 900;
-   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
-   margin-top: 2rem;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  margin-top: 2rem;
 }
 
 .textOverlay p {
   margin-top: 1.5rem;
-  font-size: 1rem;
+  font-size: clamp(0.875rem, 2vw, 1rem);
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-
-.inputContainer{
+.inputContainer {
   background-color: white;
   border-radius: 0.5rem;
   display: flex;
   align-items: center;
   padding: 0.5rem 1rem;
   margin-top: 2rem;
+  width: clamp(250px, 60%, 500px);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
 }
 
-.inputContainer .seachIcon{
+.inputContainer .seachIcon {
   color: gray;
   margin-right: 0.5rem;
   border-right: gray 1px solid;
   padding-right: 0.5rem;
+  flex-shrink: 0;
 }
 
-.inputContainer input{
+.inputContainer input {
   border: none;
   outline: none;
-  font-size: 1rem;
-  width: 300px;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  width: 100%;
+  flex: 1;
 }

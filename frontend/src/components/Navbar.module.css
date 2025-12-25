@@ -1,11 +1,26 @@
 .navbar {
   box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.2);
-  height: 20vh;
+  height: 10vh;
+  align-content: center;
 }
 
-.logo {
-  height: 80px;
+.navContent {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navItems {
+  display: flex;
+  gap: 1rem;
   align-items: center;
 }
 
+.navItems > div:not(:first-child) {
+  font-size: medium;
+}
+
+.navProfile {
+  display: flex;
+  gap: 1rem;
+}
