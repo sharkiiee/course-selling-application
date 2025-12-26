@@ -1,4 +1,4 @@
-import drop from "/gridVideo3.mp4";
+import drop from "/world.mp4";
 import styles from "./LandingHero.module.css";
 import logo from "/logo.png";
 import Container from "./Container";

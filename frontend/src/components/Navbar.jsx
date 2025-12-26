@@ -7,7 +7,7 @@ export default function Navbar() {
       <Container>
         <div className={styles.navContent}>
           <div className={styles.navItems}>
-            <div style={{fontSize: "larger", fontWeight: "900"}}>100xDevs</div>
+            <div style={{fontSize: "larger", fontWeight: "900"}}>100<span style={{color: "red"}}>x</span>Devs</div>
             <div>Home</div>
             <div>Courses</div>
           </div>
