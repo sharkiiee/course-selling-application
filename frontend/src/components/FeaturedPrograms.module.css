@@ -1,0 +1,83 @@
+.featuredHeading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.featuredHeading h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #150861;
+}
+
+.featuredHeading p {
+  font-size: 1.125rem;
+  color: #555;
+}
+
+.courseCard {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+  box-sizing: border-box;
+}
+
+.courseCard:hover {
+  transform: translateY(-5px);
+}
+
+.courseCard img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.courseInfo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
+
+.courseInfo h3 {
+  font-size: larger;
+  margin-bottom: 0.5rem;
+}
+
+.courseInfo p {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.courseInfo h3 {
+  font-size: larger;
+  margin-bottom: 2rem;
+}
+
+.courseInfo p {
+  color: #666;
+}
+
+.courseInfo h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.courseInfo button {
+  background-color: #150861;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.7rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}

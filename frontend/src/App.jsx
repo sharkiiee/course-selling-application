@@ -8,7 +8,9 @@ export default function App(){
     <div>
       <Navbar />
       <LandingHero />
-      {/* <FeaturedPrograms /> */}
+      <FeaturedPrograms />
+
+      <div>CONTINUE</div>
     </div>
   )
 }
