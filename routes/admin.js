@@ -88,7 +88,8 @@ router.post('/courses', adminMiddleware, async (req, res) => {
 });
 
 
-router.get('/courses',adminMiddleware,async function(req,res){
+// router.get('/courses',adminMiddleware,async function(req,res){
+router.get('/courses',async function(req,res){
     const ALL_COURSES = await Course.find({});
 
     res.json({

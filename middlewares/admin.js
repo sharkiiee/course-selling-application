@@ -11,11 +11,13 @@ async function adminMiddleware(req, res, next) {
     try {
         const token = req.headers.authorization;
 
-        // split Bearer and token
         const words = token.split(" ");
         const jwtToken = words[1];
+
+        console.log(jwtToken);
     
         const decodedValue = jwt.verify(jwtToken,JWT_SECRET);
+        console.log(decodedValue);
         if(decodedValue.username)
         {
             next();
